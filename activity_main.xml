@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="선택을 시작하시겠습니까?" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="96dp"
+        android:layout_height="88dp"
+        android:layout_margin="20dp"
+        android:text="시작함" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="좋아하는 안드로이드 버전은?" />
+
+    <RadioGroup
+        android:id="@+id/rdoGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+
+        <RadioButton
+            android:id="@+id/rdoOreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="오레오(8.0)" />
+
+        <RadioButton
+            android:id="@+id/rdoPie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="파이(9.0)" />
+
+        <RadioButton
+            android:id="@+id/rdoQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Q(10.0)" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/oreo" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="종료" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="처음으로" />
+
+
+</LinearLayout>
